@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto Barberia Valles de Luna Bahía</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <fieldset class="caja">
+                <h1><img src="img/stacks-image-b1e7545.png" alt="Logo de la Barbería Bahía" width="250"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </fieldset>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correlectronico">E-mail</label>
+                <input type="email" id="correlectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXXXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"required></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">E-mail</label>
+
+                    <label for="radio-telfono"><input type="radio" name="contacto" value="email" id="radio-telefono">Telefono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio"  name="contacto" value="email" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked >¿Le gustaría recibir novedades de Barberia Valles de Luna,suc. Bahía? </label>
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>16hrs-20hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Martes a Viernes </td>
+                        <td>10hrs-21hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>10hrs-15hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            
+            <img src="img/stacks-image-b1e7545.png" alt="Logo de la Barbería Alura Bahía" width="250">
+            <p class="copyright">&copy Copyright Barbería Valles de Luna, sucursal Bahía - Luciano Isa - 2022</p>
+        
+        </footer>
+    </body>
+</html>
